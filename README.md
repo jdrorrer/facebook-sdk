@@ -6,7 +6,7 @@ The Facebook Javascript SDK packaged for Meteor.js. Be sure to review the full [
 How to Install
 ------------------
 
-mrt add facebook-sdk
+meteor add dcsan:facebook-sdk
 
 How to Initialize
 ------------------
@@ -20,14 +20,17 @@ Setup your facebook app id
 add a `settings.json` in your app with the needed info.
 I usually add this in `app/private/settings.json`
 
-and add a block like this:
+at a minimum you need:
 
 ```
+{
   "public": {
 
     "facebook": {
-      "appId": "1234YOURAPPIDHERE"
-    },
+      "appId": "YOURAPPIDHERE"
+    }
+  }
+}
 
 ```
 
