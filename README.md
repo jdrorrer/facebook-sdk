@@ -11,19 +11,26 @@ mrt add facebook-sdk
 How to Initialize
 ------------------
 
-Be sure to include the FB.init() method somewhere in your client directory to initialize the SDK, replace {your-app-id} with your actual application id.
+I've added a `client/startup.coffee` file that will initialize the SDK for you.
 
-```javascript
-if(Meteor.isClient) {
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '{your-app-id}',
-      status     : true,
-      xfbml      : true
-    });
-  };
-}
+
+Setup your facebook app id
+------------------
+
+add a `settings.json` in your app with the needed info.
+I usually add this in `app/private/settings.json`
+
+and add a block like this:
+
 ```
+  "public": {
+
+    "facebook": {
+      "appId": "1234YOURAPPIDHERE"
+    },
+
+```
+
 
 Usage
 ---------------

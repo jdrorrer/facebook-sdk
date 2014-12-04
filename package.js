@@ -7,6 +7,11 @@ Package.describe({
 
 Package.on_use(function(api) {
   api.versionsFrom("METEOR@1.0");
-    api.use(['jquery', 'spacebars', 'templating']);
-    api.add_files(['sdk.js', 'templates.html'], 'client');
+    api.use(['jquery', 'spacebars', 'templating', 'coffeescript']);
+    api.add_files([
+      'vendor/sdk.js', 
+      'client/templates.html', 
+      'client/startup.coffee',
+      'client/helpers.coffee',
+    ], 'client');
 });
