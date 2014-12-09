@@ -4,5 +4,6 @@ UI.registerHelper "fbConfig", () ->
   return cfg
 
 UI.registerHelper "currentUrl", () ->
+  ## this sometimes returns only the path
   # Router.current().url
   window.document.URL

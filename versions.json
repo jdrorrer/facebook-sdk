@@ -30,7 +30,7 @@
     ],
     [
       "aldeed:autoform",
-      "4.0.2"
+      "4.0.0"
     ],
     [
       "aldeed:collection2",
@@ -337,6 +337,10 @@
       "1.0.5"
     ],
     [
+      "mizzao:bootstrap-3",
+      "3.3.1_1"
+    ],
+    [
       "mobile-status-bar",
       "1.0.1"
     ],
@@ -359,14 +363,6 @@
     [
       "mrt:moment",
       "2.8.1"
-    ],
-    [
-      "nemo64:bootstrap",
-      "3.3.0_1"
-    ],
-    [
-      "nemo64:bootstrap-data",
-      "3.3.0_1"
     ],
     [
       "npm-bcrypt",
@@ -419,10 +415,6 @@
     [
       "retry",
       "1.0.1"
-    ],
-    [
-      "reywood:iron-router-ga",
-      "0.4.1"
     ],
     [
       "routepolicy",

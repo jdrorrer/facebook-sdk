@@ -1,7 +1,7 @@
 Meteor.startup ->
   if (Meteor.isClient)
 
-    console.log("client startup actions")
+    # console.log("fbsdk| client startup actions")
     fbAppId = Meteor.settings.public.facebook.appId
     unless fbAppId
       console.warn("cant find fbAppId")
