@@ -1,17 +1,19 @@
 Package.describe({
-  name: 'dcsan:facebook-sdk',
+  name: 'jdrorrer:facebook-sdk',
   summary: "Facebook SDK packaged for Meteor",
-  version: "0.2.1",
-  git: "https://github.com/dcsan/facebook-sdk"
+  version: "0.0.1",
+  git: "https://github.com/jdrorrer/facebook-sdk"
 });
 
 Package.on_use(function(api) {
   api.versionsFrom("METEOR@1.0");
-    api.use(['jquery', 'spacebars', 'templating', 'coffeescript']);
+    api.use(['jquery', 'spacebars', 'templating']);
     api.add_files([
-      'vendor/sdk.js', 
-      'client/templates.html', 
-      'client/startup.coffee',
-      'client/helpers.coffee',
+      'client/templates.html',
+      'client/lib/fbSdk.js'
     ], 'client');
+
+    if (api.export) {
+      api.export('FbSdk');  
+    }
 });

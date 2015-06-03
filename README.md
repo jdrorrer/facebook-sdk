@@ -6,12 +6,12 @@ The Facebook Javascript SDK packaged for Meteor.js. Be sure to review the full [
 How to Install
 ------------------
 
-meteor add dcsan:facebook-sdk
+meteor add jdrorrer:facebook-sdk
 
 How to Initialize
 ------------------
 
-I've added a `client/startup.coffee` file that will initialize the SDK for you.
+I've added a `client/fbSdk.js` file that will initialize the SDK for you.
 
 
 Setup your facebook app id
