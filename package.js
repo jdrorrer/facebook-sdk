@@ -1,7 +1,7 @@
 Package.describe({
   name: 'jdrorrer:facebook-sdk',
   summary: "Facebook SDK packaged for Meteor",
-  version: "0.0.1",
+  version: "0.0.11",
   git: "https://github.com/jdrorrer/facebook-sdk"
 });
 
